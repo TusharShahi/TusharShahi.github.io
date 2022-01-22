@@ -1,16 +1,24 @@
+.Navbar {
+  display: flex;
+  width: 40%;
+  float: right;
+  padding: 0 5%;
+}
 
+@media only screen and (max-width: 479px) {
+}
 
-.Navbar{
+@media only screen and (max-width: 768px) {
+  .Navbar {
     display: flex;
-    width: 40%;
-    float: right;
+    width: auto;
+    float: none;
     padding: 0 5%;
-    }
+  }
+}
 
-@media only screen and (min-width: 320px) and (max-width: 479px){  }
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+}
 
-@media only screen and (min-width: 480px) and (max-width: 768px){ }
-
-@media only screen and (min-width: 769px) and (max-width: 991px){ }
-
-@media only screen and (min-width: 992px){  }
+@media only screen and (min-width: 992px) {
+}

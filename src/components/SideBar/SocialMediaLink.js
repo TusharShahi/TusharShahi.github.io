@@ -5,7 +5,7 @@ import { Context } from "../../tools/context";
 import styles from "./ContactArea.module.css";
 
 const SocialMediaLink = memo((props) => {
-  const { theme, themeToggler } = useContext(Context);
+  const { theme } = useContext(Context);
 
   let socialMediaIconLinkWordsArray = socialMediaIconLink.split("-");
   socialMediaIconLinkWordsArray[1] = props.website + ".svg";
@@ -24,6 +24,7 @@ const SocialMediaLink = memo((props) => {
         src={componentSocialMediaIconLink}
         alt={altText}
         priority
+        unoptimized
       ></Image>
     </a>
   );

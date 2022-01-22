@@ -4,7 +4,7 @@ import { abilities, abilitesNameMapping } from "../../tools/constants";
 import styles from "./SkillsBox.module.css";
 
 const SkillsBox = memo((props) => {
-  const { theme, toggleTheme } = useContext(Context);
+  const { theme } = useContext(Context);
 
   const createSkillsBox = (skillsList, type, groupName) => {
     let iterationList = skillsList;

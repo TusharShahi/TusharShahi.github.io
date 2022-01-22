@@ -45,6 +45,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .WorkArea {
+    width: auto;
+  }
   .WorkBlock img {
     width: 70%;
     /*   text-align: center; */

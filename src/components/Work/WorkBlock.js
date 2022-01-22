@@ -24,8 +24,10 @@ const WorkBlock = memo((props) => {
           layout="responsive"
           width={280}
           height={160}
+          sizes="280 210 140"
           src={imageLink}
           alt={props.mockupImageText}
+          loading={props.loading}
         ></Image>
       </div>
       <div className={styles.WorkDescription}>

@@ -2,15 +2,17 @@ import React, { memo, forwardRef } from "react";
 import styles from "./Sidebar.module.css";
 import ContactArea from "./ContactArea";
 import Image from "next/image";
-//import { displayPictureLink } from "../../tools/constants";
-import profilePic from "../../../public/images/displayPicture-experience-phone.jpg";
+import {
+  displayPictureLink,
+  displayPictureLinkPhone
+} from "../../tools/constants";
 import { useRouter } from "next/router";
 
 const SideBar = memo(
   forwardRef((props) => {
     const router = useRouter();
     let showBottomContactArea = true;
-    if (typeof window !== "undefined" && window.innerWidth < 786) {
+    if (typeof window !== "undefined" && window.innerWidth < 768) {
       showBottomContactArea = false;
     }
 
@@ -31,13 +33,21 @@ const SideBar = memo(
           <div className={styles.welcomeArea}>
             <div className={styles.displayPhotoArea}>
               <Image
-                loader={({ src }) => src}
-                height="232"
-                width="240"
-                src={profilePic}
+                loader={({ src }) => {
+                  if (
+                    typeof window !== "undefined" &&
+                    window.innerWidth < 768
+                  ) {
+                    return displayPictureLinkPhone;
+                  }
+                  return src;
+                }}
+                height="186"
+                width="192"
+                src={displayPictureLink}
                 alt="Display Picture"
-                placeholder="blur"
                 priority
+                unoptimized
               ></Image>
             </div>
 

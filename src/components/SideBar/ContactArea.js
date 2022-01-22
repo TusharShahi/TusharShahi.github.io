@@ -3,10 +3,10 @@ import styles from "./ContactArea.module.css";
 import SocialMediaLink from "./SocialMediaLink";
 import {
   /*phoneNumber ,*/ emailLink,
-  socialMediaLinks,
+  socialMediaLinks
 } from "../../tools/constants";
 
-const ContactArea = memo((props) => {
+const ContactArea = memo(() => {
   const mailToLink = "mailto:" + emailLink;
 
   return (

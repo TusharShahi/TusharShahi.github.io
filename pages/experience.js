@@ -1,8 +1,8 @@
 import Experience from "../src/components/Exp/Experience";
 const ExperiencePage = () => <Experience />;
-export const getStaticProps = async (context) => {
+export const getStaticProps = async () => {
   return {
-    props: {}, // will be passed to the page component as props
+    props: {} // will be passed to the page component as props
   };
 };
 

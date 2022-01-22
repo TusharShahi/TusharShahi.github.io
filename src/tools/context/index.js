@@ -3,7 +3,7 @@ import { colorPalette } from "../constants";
 
 const Context = createContext({
   theme: "",
-  toggleTheme: null,
+  toggleTheme: null
 });
 
 const changeColorsTo = (theme) => {
@@ -13,7 +13,7 @@ const changeColorsTo = (theme) => {
     "headerText",
     "base",
     "pressed",
-    "shade",
+    "shade"
   ];
   if (typeof document !== "undefined")
     properties.forEach((x) => {
@@ -28,9 +28,11 @@ const ContextProvider = (props) => {
   let [currentTheme, setTheme] = useState(
     (() => {
       if (typeof window !== "undefined") {
-        localStorage.getItem("themeSwitch") != null
+        return localStorage.getItem("themeSwitch") !== null
           ? localStorage.getItem("themeSwitch")
           : "LIGHT";
+      } else {
+        return "DARK";
       }
     })()
   );
@@ -47,7 +49,7 @@ const ContextProvider = (props) => {
     <Context.Provider
       value={{
         theme: currentTheme,
-        toggleTheme: themeSwitchHandler,
+        toggleTheme: themeSwitchHandler
       }}
     >
       {props.children}

@@ -11,19 +11,39 @@ import workStyles from "./Work.module.css";
 
 const Work = memo(() => {
   const createWorkBlock = (contentArray) => {
-    let workBlock = contentArray.map((x) => (
-      <WorkBlock
-        name={x.project}
-        mockupImage={x.mockup}
-        link={x.link}
-        description={x.description}
-        mockupImageText={x.altMockupText}
-        role={x.role}
-        key={x.project}
-        imgWidth={x.imgWidth}
-        imgHeight={x.imgHeight}
-      ></WorkBlock>
-    ));
+    let mockupImageLink = "mockup";
+    if (typeof window !== "undefined" && window.innerWidth < 768)
+      mockupImageLink = "mockupPhone";
+
+    let workBlock = contentArray.map((x, index) =>
+      index <= 2 ? (
+        <WorkBlock
+          name={x.project}
+          mockupImage={x[mockupImageLink]}
+          link={x.link}
+          description={x.description}
+          mockupImageText={x.altMockupText}
+          role={x.role}
+          key={x.project}
+          imgWidth={x.imgWidth}
+          imgHeight={x.imgHeight}
+          loading="eager"
+        ></WorkBlock>
+      ) : (
+        <WorkBlock
+          name={x.project}
+          mockupImage={x.mockup}
+          link={x.link}
+          description={x.description}
+          mockupImageText={x.altMockupText}
+          role={x.role}
+          key={x.project}
+          imgWidth={x.imgWidth}
+          imgHeight={x.imgHeight}
+          loading="lazy"
+        ></WorkBlock>
+      )
+    );
     return workBlock;
   };
 

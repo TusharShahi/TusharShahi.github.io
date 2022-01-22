@@ -10,5 +10,5 @@
 }
 
 .activeLink {
-  color: #ccc;
+  text-decoration: underline;
 }

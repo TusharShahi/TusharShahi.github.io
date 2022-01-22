@@ -9,16 +9,13 @@ const MyApp = ({ Component, pageProps }) => {
       <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico?" />
-
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="Tushar Shahi - Developer" />
         <meta name="keyword" content="portfolio, javascript, developer, web" />
-
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <title>Tushar Shahi</title>
       </Head>
       <ContextProvider>

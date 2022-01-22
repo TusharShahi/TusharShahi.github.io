@@ -67,14 +67,15 @@
 @media only screen and (max-width: 768px) {
   .contactArea {
     font-size: 300%;
-    width: 60%;
+    width: 100%;
   }
 
   .emailAndPhoneBox {
-    width: 100%;
+    width: 80%;
     display: flex;
     font-size: 30%;
-    margin: 2%;
+    text-align: center;
+    margin: 2% auto;
     padding: 4% 0;
   }
   .emailAndPhoneBox a {
@@ -94,6 +95,10 @@
     width: 25px;
     display: block;
     padding: 2px;
+  }
+  .copyrightBox {
+    text-align: center;
+    font-size: 30%;
   }
 }
 

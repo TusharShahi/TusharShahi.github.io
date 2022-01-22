@@ -4,11 +4,13 @@
 }
 
 .SkillsBox ul {
-  font-size: 60%;
+  font-size: 1.5rem;
 }
 .SkillsBox li {
   display: inline-block;
   margin: 0% 2% 0% 0%;
+  padding: 0% 2%;
+  vertical-align: super;
 }
 .SkillsBox p {
   padding-top: 20px;
