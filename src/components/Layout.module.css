@@ -1,0 +1,11 @@
+.ContentWrapperBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.shiftedMain {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
