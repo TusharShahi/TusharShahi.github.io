@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { colorPalette } from "../constants";
 
 const Context = createContext({
@@ -25,17 +25,13 @@ const changeColorsTo = (theme) => {
 };
 
 const ContextProvider = (props) => {
-  let [currentTheme, setTheme] = useState(
-    (() => {
-      if (typeof window !== "undefined") {
-        return localStorage.getItem("themeSwitch") !== null
-          ? localStorage.getItem("themeSwitch")
-          : "LIGHT";
-      } else {
-        return "DARK";
-      }
-    })()
-  );
+  let [currentTheme, setTheme] = useState("DARK");
+  useEffect(() => {
+    let storageTheme = localStorage.getItem("themeSwitch");
+    let currentTheme = storageTheme ? storageTheme : "DARK";
+    setTheme(currentTheme);
+  }, []);
+
   changeColorsTo(currentTheme);
 
   let themeSwitchHandler = () => {

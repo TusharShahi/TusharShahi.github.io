@@ -9,7 +9,7 @@
 .SkillsBox li {
   display: inline-block;
   margin: 0% 2% 0% 0%;
-  padding: 0% 2%;
+  padding: 0% 2% 0% 0%;
   vertical-align: super;
 }
 .SkillsBox p {

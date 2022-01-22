@@ -8,7 +8,7 @@ import ContactArea from "./SideBar/ContactArea";
 const Layout = memo(({ children }) => {
   const router = useRouter();
 
-  let mainClassName = `${styles.main}`;
+  let mainClassName = ``;
   let showBottomContactArea = false;
   if (router.pathname !== "/") mainClassName += ` ${styles.shiftedMain}`;
 
