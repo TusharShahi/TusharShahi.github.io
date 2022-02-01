@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useContext, memo } from "react";
 import { socialMediaIconLink } from "../../tools/constants";
 import { Context } from "../../tools/context";

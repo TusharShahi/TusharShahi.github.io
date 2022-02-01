@@ -1,11 +1,7 @@
 import React, { memo, forwardRef } from "react";
 import styles from "./Sidebar.module.css";
 import ContactArea from "./ContactArea";
-import Image from "next/image";
-import {
-  displayPictureLink,
-  displayPictureLinkPhone
-} from "../../tools/constants";
+import { displayPictureLink } from "../../tools/constants";
 import { useRouter } from "next/router";
 
 const SideBar = memo(

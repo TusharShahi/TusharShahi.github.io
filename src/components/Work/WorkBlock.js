@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import Image from "next/image";
 import styles from "./Work.module.css";
 const WorkBlock = memo((props) => {
   let h3Tag = (
