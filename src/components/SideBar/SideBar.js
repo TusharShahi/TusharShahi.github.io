@@ -32,23 +32,7 @@ const SideBar = memo(
         <div className={styles.SideBarBox}>
           <div className={styles.welcomeArea}>
             <div className={styles.displayPhotoArea}>
-              <Image
-                loader={({ src }) => {
-                  if (
-                    typeof window !== "undefined" &&
-                    window.innerWidth < 768
-                  ) {
-                    return displayPictureLinkPhone;
-                  }
-                  return src;
-                }}
-                height="186"
-                width="192"
-                src={displayPictureLink}
-                alt="Display Picture"
-                priority
-                unoptimized
-              ></Image>
+              <img src={displayPictureLink} alt="Display Picture"></img>
             </div>
 
             <div className={styles.textArea}>

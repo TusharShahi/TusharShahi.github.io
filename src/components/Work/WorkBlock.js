@@ -19,16 +19,7 @@ const WorkBlock = memo((props) => {
     <div className={styles.WorkBlock}>
       {h3Tag}
       <div className={styles.WorkScreenShotsBox}>
-        <Image
-          loader={({ src }) => src}
-          layout="responsive"
-          width={280}
-          height={160}
-          sizes="280 210 140"
-          src={imageLink}
-          alt={props.mockupImageText}
-          loading={props.loading}
-        ></Image>
+        <img src={imageLink} alt={props.mockupImageText}></img>
       </div>
       <div className={styles.WorkDescription}>
         <p>{props.description}</p>
