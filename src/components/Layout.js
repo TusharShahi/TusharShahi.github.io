@@ -15,15 +15,16 @@ const Layout = memo(({ children }) => {
   if (typeof window !== "undefined" && window.innerWidth < 768) {
     showBottomContactArea = true;
   }
+  const pageNotFound = router.pathname !== "/404";
 
   return (
     <div>
-      <Header></Header>
+      {pageNotFound && <Header></Header>}
       <div className={styles.ContentWrapperBox}>
-        <SideBar></SideBar>
+        {pageNotFound && <SideBar></SideBar>}
         <main className={mainClassName}>{children}</main>
       </div>
-      {showBottomContactArea && (
+      {pageNotFound && showBottomContactArea && (
         <div className={styles.BottomContactBox}>
           <ContactArea></ContactArea>
         </div>
