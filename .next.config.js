@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+
+// next.config.js
+const withOptimizedImages = require("next-optimized-images");
+
+module.exports = withOptimizedImages({
   reactStrictMode: true,
   images: {
     domains: ["localhost:3000", ""],
@@ -13,4 +17,4 @@ module.exports = {
     }
     return config;
   }
-};
+});
