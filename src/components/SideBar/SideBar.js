@@ -28,7 +28,12 @@ const SideBar = memo(
         <div className={styles.SideBarBox}>
           <div className={styles.welcomeArea}>
             <div className={styles.displayPhotoArea}>
-              <img src={displayPictureLink} alt="Display Picture"></img>
+              <img
+                src={displayPictureLink}
+                alt="Display Picture"
+                width={180}
+                height={175}
+              ></img>
             </div>
 
             <div className={styles.textArea}>
