@@ -16,7 +16,12 @@ const SocialMediaLink = memo((props) => {
   let imageLinkTagCode;
   imageLinkTagCode = (
     <a href={socialMediaLink} rel="noopener noreferrer" target="_blank">
-      <img src={componentSocialMediaIconLink} alt={altText}></img>
+      <img
+        src={componentSocialMediaIconLink}
+        alt={altText}
+        width={21}
+        height={21}
+      ></img>
     </a>
   );
   return (
