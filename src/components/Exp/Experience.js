@@ -5,7 +5,8 @@ import {
   experienceMRM,
   experienceRMO,
   experienceRMO2,
-  experienceTCFG
+  experienceTCFG,
+  experiencePluang
 } from "../../tools/constants";
 import styles from "../../App.module.css";
 
@@ -31,6 +32,7 @@ const Experience = memo(() => {
       <h2>Experience</h2>
       <div id="corporate">
         {createExperienceBlock([
+          experiencePluang,
           experienceShell,
           experienceRMO,
           experienceRMO2

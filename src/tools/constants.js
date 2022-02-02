@@ -48,6 +48,12 @@ export const skills = {
     link: "https://www.typescriptlang.org/",
     color: "blue"
   },
+  next: {
+    name: "NextJS",
+    imageLink: "next",
+    link: "https://nextjs.org/",
+    color: "yellow"
+  },
   react: {
     name: "ReactJS",
     imageLink: "react",
@@ -160,6 +166,16 @@ export const workEmergencyZone = {
   imgHeight: "2796"
 };
 
+export const experiencePluang = {
+  companyLink: "https://pluang.com/",
+  role: "Software Engineer",
+  company: "Pluang",
+  description:
+    "Built CMS for product. Working in product's financial education team.",
+  timePeriod: "October 2021 - ",
+  skillsUsed: [skills["next"], skills["node"]]
+};
+
 export const experienceShell = {
   companyLink:
     "https://play.google.com/store/apps/details?id=com.shell.sitibv.myjiffylube&hl=en&gl=US",
@@ -167,7 +183,7 @@ export const experienceShell = {
   company: "Shell IT",
   description:
     "Pivotal in golive and updates of MyJiffyLube app. Responsible for front end development focusing on accessibility.",
-  timePeriod: "July 2019 - ",
+  timePeriod: "July 2019 - October 2021",
   skillsUsed: [skills["salesforce"], skills["javascript"], skills["css"]]
 };
 
@@ -216,10 +232,10 @@ export const experienceTCFG = {
 
 export const abilities = {
   web: [
-    skills["javascript"],
     skills["typescript"],
-    skills["node"],
     skills["react"],
+    skills["next"],
+    skills["node"],
     skills["html"],
     skills["css"]
   ],
