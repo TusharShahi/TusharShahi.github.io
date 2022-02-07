@@ -129,19 +129,19 @@ export const workFlixRemote = {
   mockupPhone: "/images/work/phone/flixremote-mockup.png",
   link: "https://chrome.google.com/webstore/detail/flixremote-your-netflix-r/jkhffbfbokiincaebolhpcfdkhiipalh?hl=en",
   altMockupText: "FlixRemote Mockup",
-  imgWidth: "672",
-  imgHeight: "384"
+  imgWidth: "160",
+  imgHeight: "91"
 };
 
 export const workWorkForce = {
   project: "WorkForce",
   description: "Desktop application to manage work force at a college campus",
   mockup: "/images/work/desktop/workforce-mockup.png",
-  mockupPhone: "/images/work/phone/flixremote-mockup.png",
+  mockupPhone: "/images/work/phone/workforce-mockup.png",
   link: "",
   altMockupText: "WorkForce Mockup",
-  imgWidth: "5005",
-  imgHeight: "3004"
+  imgWidth: "160",
+  imgHeight: "95"
 };
 
 export const workMRMWebsite = {
@@ -151,8 +151,8 @@ export const workMRMWebsite = {
   mockupPhone: "/images/work/phone/mrmwebsite-mockup.png",
   link: "http://www.marsrovermanipal.com",
   altMockupText: "MRM Website Mockup",
-  imgWidth: "5340",
-  imgHeight: "2826"
+  imgWidth: "160",
+  imgHeight: "85"
 };
 
 export const workEmergencyZone = {
@@ -162,8 +162,8 @@ export const workEmergencyZone = {
   mockupPhone: "/images/work/phone/emergencyzone-mockup.png",
   link: "",
   altMockupText: "Emergency Zone Mockup",
-  imgWidth: "5416",
-  imgHeight: "2796"
+  imgWidth: "160",
+  imgHeight: "85"
 };
 
 export const experiencePluang = {
