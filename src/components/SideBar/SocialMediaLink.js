@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { memo, useContext } from "react";
 import { socialMediaIconLink } from "../../tools/constants";
 import { Context } from "../../tools/context";
@@ -16,12 +17,15 @@ const SocialMediaLink = memo((props) => {
   let imageLinkTagCode;
   imageLinkTagCode = (
     <a href={socialMediaLink} rel="noopener noreferrer">
-      <img
+      <Image
+        loader={({ src }) => src}
         src={componentSocialMediaIconLink}
         alt={altText}
         width={21}
         height={21}
-      ></img>
+        quality={5}
+        priority
+      ></Image>
     </a>
   );
   return (

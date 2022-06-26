@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { memo } from "react";
 import styles from "./Work.module.css";
 const WorkBlock = memo((props) => {
@@ -18,12 +19,15 @@ const WorkBlock = memo((props) => {
     <div className={styles.WorkBlock}>
       {h3Tag}
       <div className={styles.WorkScreenShotsBox}>
-        <img
+        <Image
+          loader={({ src }) => src}
           src={imageLink}
           alt={props.mockupImageText}
           width={props.imgWidth}
           height={props.imgHeight}
-        ></img>
+          quality={75}
+          priority
+        ></Image>
       </div>
       <div className={styles.WorkDescription}>
         <p>{props.description}</p>
