@@ -6,7 +6,7 @@ const withOptimizedImages = require("next-optimized-images");
 module.exports = withOptimizedImages({
   headers: async () => [
     {
-      source: "/:all*(svg|jpg|png|webp)",
+      source: "/:all*(svg|jpg|png)",
       locale: false,
       headers: [
         {
