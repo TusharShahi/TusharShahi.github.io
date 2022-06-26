@@ -33,7 +33,6 @@ const SideBar = memo((props) => {
               alt="Display Picture"
               width={180}
               height={175}
-              quality={50}
               priority
             ></Image>
           </div>
