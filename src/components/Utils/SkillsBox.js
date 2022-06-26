@@ -21,7 +21,6 @@ const SkillsBox = memo((props) => {
           <a
             className={styles[x.color + " " + theme]}
             rel="noopener noreferrer"
-            target="_blank"
             href={x.link}
           >
             {x.name}

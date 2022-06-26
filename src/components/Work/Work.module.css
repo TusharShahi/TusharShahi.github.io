@@ -19,7 +19,7 @@
   font-weight: 500;
 }
 .WorkBlock h3 > a {
-  cursor: auto;
+  cursor: pointer;
 }
 .WorkBlock h3 .projectHasLink {
   color: var(--base);

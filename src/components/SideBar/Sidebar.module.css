@@ -7,6 +7,9 @@
   font-size: 200%;
 }
 
+.SideBarBox:nth-child(2) {
+  margin-top: 2px;
+}
 .SideBarBox {
   position: relative;
   left: 0%;

@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React, { memo } from "react";
 import styles from "./Work.module.css";
 const WorkBlock = memo((props) => {
   let h3Tag = (
     <h3>
-      <a href={props.link} rel="noopener noreferrer" target="_blank">
+      <a href={props.link} rel="noopener noreferrer">
         {props.name}
       </a>
     </h3>
@@ -18,12 +19,14 @@ const WorkBlock = memo((props) => {
     <div className={styles.WorkBlock}>
       {h3Tag}
       <div className={styles.WorkScreenShotsBox}>
-        <img
+        <Image
           src={imageLink}
           alt={props.mockupImageText}
           width={props.imgWidth}
           height={props.imgHeight}
-        ></img>
+          quality={25}
+          priority
+        ></Image>
       </div>
       <div className={styles.WorkDescription}>
         <p>{props.description}</p>
