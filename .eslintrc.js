@@ -1,15 +1,15 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: ["plugin:react/recommended", "prettier", "next"],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 13,
-    sourceType: "module",
+    sourceType: "module"
   },
   plugins: ["react"],
   rules: {
@@ -21,22 +21,23 @@ module.exports = {
     "no-undef": ["error", { typeof: true }],
     "no-unused-vars": [
       "error",
-      { vars: "all", args: "after-used", ignoreRestSiblings: false },
+      { vars: "all", args: "after-used", ignoreRestSiblings: false }
     ],
+    "@next/next/no-img-element": "off",
     "func-style": ["error", "expression", { allowArrowFunctions: true }],
     "no-console": ["error"],
     camelcase: [
       "error",
       {
         ignoreDestructuring: true,
-        allow: ["unstable_"],
-      },
-    ],
+        allow: ["unstable_"]
+      }
+    ]
   },
 
   settings: {
     react: {
-      version: "latest",
-    },
-  },
+      version: "latest"
+    }
+  }
 };

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { memo } from "react";
 import { displayPictureLink } from "../../tools/constants";
@@ -28,14 +27,12 @@ const SideBar = memo((props) => {
       <div className={styles.SideBarBox}>
         <div className={styles.welcomeArea}>
           <div className={styles.displayPhotoArea}>
-            <Image
+            <img
               src={displayPictureLink}
               alt="Display Picture"
               width={180}
               height={175}
-              quality={45}
-              priority
-            ></Image>
+            ></img>
           </div>
 
           <div className={styles.textArea}>
