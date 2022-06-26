@@ -25,6 +25,7 @@ const WorkBlock = memo((props) => {
           alt={props.mockupImageText}
           width={props.imgWidth}
           height={props.imgHeight}
+          quality={25}
           priority
         ></Image>
       </div>
