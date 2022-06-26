@@ -23,7 +23,6 @@ const SocialMediaLink = memo((props) => {
         alt={altText}
         width={21}
         height={21}
-        unoptimized
       ></Image>
     </a>
   );
