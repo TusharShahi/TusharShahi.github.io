@@ -19,7 +19,6 @@ const Work = memo(() => {
       <WorkBlock
         name={x.project}
         mockupImage={x.mockup}
-        mockupImagePhone={x.mockupPhone}
         link={x.link}
         description={x.description}
         mockupImageText={x.altMockupText}
