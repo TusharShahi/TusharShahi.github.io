@@ -4,6 +4,11 @@
 const withOptimizedImages = require("next-optimized-images");
 
 module.exports = withOptimizedImages({
+  experimental: {
+    images: {
+      unoptimized: true
+    }
+  },
   headers: async () => [
     {
       source: "/:all*(svg|jpg|png)",
