@@ -29,10 +29,12 @@ const SideBar = memo((props) => {
         <div className={styles.welcomeArea}>
           <div className={styles.displayPhotoArea}>
             <Image
+              loader={({ src }) => src}
               src={displayPictureLink}
               alt="Display Picture"
               width={180}
               height={175}
+              quality={65}
               priority
             ></Image>
           </div>

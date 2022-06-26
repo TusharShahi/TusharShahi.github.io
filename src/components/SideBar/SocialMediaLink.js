@@ -18,6 +18,7 @@ const SocialMediaLink = memo((props) => {
   imageLinkTagCode = (
     <a href={socialMediaLink} rel="noopener noreferrer">
       <Image
+        loader={({ src }) => src}
         src={componentSocialMediaIconLink}
         alt={altText}
         width={21}

@@ -20,10 +20,12 @@ const WorkBlock = memo((props) => {
       {h3Tag}
       <div className={styles.WorkScreenShotsBox}>
         <Image
+          loader={({ src }) => src}
           src={imageLink}
           alt={props.mockupImageText}
           width={props.imgWidth}
           height={props.imgHeight}
+          quality={25}
           priority
         ></Image>
       </div>
